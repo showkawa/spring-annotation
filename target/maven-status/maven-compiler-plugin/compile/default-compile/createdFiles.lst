@@ -1,0 +1,13 @@
+com\brian\aop\LogAspects.class
+com\brian\ext\BrianApplicationListener.class
+com\brian\mvc\config\WebConfig.class
+com\brian\config\MainConfigOfAutowired.class
+com\brian\config\MainConfigOfLifeCycle.class
+com\brian\config\MainConfig.class
+com\brian\condition\BrianSelector.class
+com\brian\ext\BrianBeanFactoryPostProcessor.class
+com\brian\config\MainConfigOfAOP.class
+com\brian\config\BrianTypeFilter.class
+com\brian\service\BookService.class
+com\brian\tx\AccessRightService.class
+com\brian\ext\BrianBeanDefinitionRegistryPostProcessor.class
