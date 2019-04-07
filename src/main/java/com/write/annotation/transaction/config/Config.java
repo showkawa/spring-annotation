@@ -1,4 +1,4 @@
-package com.brian.config;
+package com.write.annotation.transaction.config;
 
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -31,10 +31,9 @@ import java.beans.PropertyVetoException;
  */
 @EnableAspectJAutoProxy        //开启AOP代理自动配置
 @EnableTransactionManagement   //基于注解的事务管理
-//@ComponentScan(value = {"com.brian.bean","com.write.annotation"})
 @ComponentScan(value = {"com.write.annotation.transaction"})
 @Configuration
-public class MainConfigOfAutowired {
+public class Config {
 
         @Bean
         public DataSource dataSource() throws PropertyVetoException {

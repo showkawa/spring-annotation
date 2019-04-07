@@ -1,4 +1,4 @@
 database:
-  name: Oracle_Tony_301A
+  name: remote_test_db
 database02:
   name: test

@@ -1,18 +1,23 @@
-import com.brian.bean.Brian;
-import com.brian.bean.WenTao;
-import com.brian.config.MainConfigOfAutowired;
-import org.junit.Test;
+import com.write.annotation.transaction.config.Config;
+import com.write.annotation.transaction.service.TJsonService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Arrays;
 
 public class IOC_TEST_Autowired {
 
-    @Test
-    public void test() {
-        AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(MainConfigOfAutowired.class);
-        app.getBean(Brian.class);
-        app.close();
+    public static void main(String[] args) throws Exception {
+        AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Config.class);
 
+//        Arrays.stream(app.getBeanDefinitionNames()).forEach( bean -> {
+//            System.out.println("Bean Name: " + bean );
+//        });
+        TJsonService bean = app.getBean(TJsonService.class);
+        bean.addJson();
     }
+
+
+
 
 
 }
