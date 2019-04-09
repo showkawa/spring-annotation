@@ -14,6 +14,8 @@ public class IOC_TEST_Autowired {
 //        });
         TJsonService bean = app.getBean(TJsonService.class);
         bean.addJson();
+
+
     }
 
 
