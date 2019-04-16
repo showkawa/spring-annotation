@@ -8,6 +8,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Random;
+
 public class IOC_TEST_AOP {
 
     @Test
@@ -25,6 +27,9 @@ public class IOC_TEST_AOP {
 
         BaseService baseService = (BaseService) brianAnnotationConfigApplicationContext.getBean("baseService");
         baseService.add();
+
     }
+
+
 
 }
