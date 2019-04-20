@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 /**
  * 手写ArrayList集合--底层是数组存放
+ *
+ * 核心API
+ * ####1.Arrays.copyOf 数组扩容
+ * ####2.System.arraycopy 数组拷贝
  */
 public class BrianArrayList<E>  implements BrianList<E>{
 
