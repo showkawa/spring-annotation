@@ -13,10 +13,10 @@ import org.springframework.stereotype.Controller;
 @Configuration //告诉spring这是一个配置类
 /*
 * @ComponentScan
-*   value:只当扫描的的包
+*   value:只当于扫描的的包
 *   excludeFilters = 指定扫描的时候按照什么规则排除哪些组件
 *   includeFilters = 指定扫描的时候只需要包含哪些组件
-*   Filter.ANNOTTATION:按照注解
+*   Filter.ANNOTATION:按照注解
 *   Filter.ASSIGNABLE_TYPE: 按照给定的类型
 * */
 
@@ -55,7 +55,7 @@ public class MainConfig {
     /*
     *
     *给容器中注册组件
-    * 1，报扫描+ 组件标注注解（@Controller/@Service/@Repository/@Component）[自己写的方法]
+    * 1，包扫描+ 组件标注注解（@Controller/@Service/@Repository/@Component）[自己写的方法]
     * 2， @Bean [导入的第三方包里面的组件]
     * 3，@Import [快速的给容器导入一个组件]
     *       1.@Import(要导入的组件class)

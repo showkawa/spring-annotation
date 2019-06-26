@@ -2,10 +2,7 @@ package com.brian.config;
 
 import com.brian.bean.Alan;
 import com.brian.bean.Vincent;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 /**
  * bean的生命周期：
@@ -34,11 +31,12 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 @ComponentScan("com.brian.bean")
 public class MainConfigOfLifeCycle {
-//    @Scope("prototype")
-/*    @Bean(initMethod = "init", destroyMethod = "destroy")
+    //@Scope("prototype")
+    @Lazy
+    @Bean(initMethod = "init", destroyMethod = "destroy")
     public Alan getAlan () {
         return new Alan();
-    }*/
+    }
 
 
 }
