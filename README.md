@@ -5,6 +5,7 @@
 
 ##### 1.1 Spring 5.X 源码分析
 ###### 1.1.1 Spring5源码深度解析(一)之理解Configuration注解   https://www.cnblogs.com/hlkawa/p/11085020.html
+###### 1.1.2 Spring5源码深度分析(二)之理解@Conditional,@Import注解   https://www.cnblogs.com/hlkawa/p/11088129.html
 
 #### 2. 手写框架 
 

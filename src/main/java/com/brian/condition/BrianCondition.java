@@ -17,7 +17,7 @@ public class BrianCondition implements Condition {
 
         System.out.println("---male:" + context.getRegistry().containsBeanDefinition("person"));
         if(context.getRegistry().containsBeanDefinition("person"))
-            return true;
+            return false;
 
         return false;
     }

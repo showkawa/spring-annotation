@@ -27,7 +27,8 @@ import org.springframework.stereotype.Controller;
                 @ComponentScan.Filter(type = FilterType.CUSTOM,classes = {BrianTypeFilter.class})
         },useDefaultFilters = false)
 })
-@Import({Brian.class,Alan.class,BrianSelector.class})
+//@Import({Brian.class,Alan.class})
+@Import({BrianSelector.class})
 public class MainConfig {
 
     @Bean("person") //给容器中注册一个Bean;类型为返回值的类型；id默认是方法名作为id

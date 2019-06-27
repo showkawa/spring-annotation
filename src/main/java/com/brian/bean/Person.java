@@ -6,7 +6,7 @@ public class Person {
 
     @Value("Tony")
     private String name;
-    @Value("19")
+    //@Value("19")
     private Integer age;
     @Value("${database.name}")
     private String attr;

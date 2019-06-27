@@ -1,5 +1,6 @@
 package com.brian.condition;
 
+import com.brian.config.MainConfigOfAOP;
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
 
@@ -8,7 +9,6 @@ import org.springframework.core.type.AnnotationMetadata;
 * */
 public class BrianSelector implements ImportSelector {
 
-
     /**
      *
      * @param importingClassMetadata 当前被标记有@Import注解的所有注解信息
@@ -16,7 +16,8 @@ public class BrianSelector implements ImportSelector {
      */
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
 
-        System.out.println("--------:"+importingClassMetadata.getClassName());
-        return new String[0];
+        System.out.println("----当前配置类----:"+importingClassMetadata.getClassName());
+        return new String[]{};
+        //return new String[]{MainConfigOfAOP.class.getName()};
     }
 }
