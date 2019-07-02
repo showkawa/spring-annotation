@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @PropertySource(value = {"classpath:/app.properties"})
 public class Brian implements InitializingBean , DisposableBean {
 
