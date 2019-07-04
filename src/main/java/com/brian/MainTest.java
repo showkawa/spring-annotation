@@ -4,15 +4,34 @@ import com.brian.aop.MathCalculator;
 import com.brian.bean.*;
 import com.brian.config.MainConfig;
 import com.brian.config.MainConfigOfLifeCycle;
+import com.brian.controller.BookController;
+import com.write.bmvc.annotation.BrianController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.util.Assert;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class MainTest {
     public static void main(String[] args) {
-         ApplicationContext lifeCycle =
-                 new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class);
+         ApplicationContext mainConfig =
+                 new AnnotationConfigApplicationContext(MainConfig.class);
 
-        System.out.println("LifeCycle容器创建成功");
+        System.out.println("MainConfig容器创建成功");
+
+        BookController bookController = mainConfig.getBean(BookController.class);
+        try {
+            Method printBook = bookController.getClass().getDeclaredMethod("printBook");
+            printBook.setAccessible(true);
+            printBook.invoke(bookController);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
 //         Alan alan1 =  acac.getBean(Alan.class);
 //        System.out.println("--ALAN--:" + alan1);
         // Alan alan2 =  acac.getBean(Alan.class);
@@ -38,6 +57,6 @@ public class MainTest {
 
 
         //关闭ioc容器
-        ((AnnotationConfigApplicationContext) lifeCycle).close();
+        ((AnnotationConfigApplicationContext) mainConfig).close();
     }
 }

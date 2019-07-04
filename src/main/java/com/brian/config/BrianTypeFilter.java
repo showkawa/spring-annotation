@@ -14,7 +14,7 @@ public class BrianTypeFilter implements TypeFilter {
     * */
     public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory) throws IOException {
         System.out.println("getClassMetadata--:" + metadataReader.getClassMetadata().getClassName());
-        if(metadataReader.getClassMetadata().getClassName().contains("tory"))
+        if(metadataReader.getClassMetadata().getClassName().contains("BrianBeanFactory"))
         {
             return true;
         }

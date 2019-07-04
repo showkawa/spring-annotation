@@ -20,13 +20,14 @@ import org.springframework.stereotype.Controller;
 *   Filter.ASSIGNABLE_TYPE: 按照给定的类型
 * */
 
-@ComponentScans(value = {
-        @ComponentScan(value = "com.brian",includeFilters = {
+//@ComponentScans(value = {
+//        @ComponentScan(value = "com.brian",includeFilters = {
 //                @ComponentScan.Filter(type = FilterType.ANNOTATION,classes = {Controller.class}),
 //                @ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE,classes = {BookService.class}),
-                @ComponentScan.Filter(type = FilterType.CUSTOM,classes = {BrianTypeFilter.class})
-        },useDefaultFilters = false)
-})
+//                @ComponentScan.Filter(type = FilterType.CUSTOM,classes = {BrianTypeFilter.class})
+//        },useDefaultFilters = false)
+//})
+@ComponentScan({"com.brian.service", "com.brian.controller"})
 //@Import({Brian.class,Alan.class})
 @Import({BrianSelector.class})
 public class MainConfig {
