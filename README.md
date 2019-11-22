@@ -27,6 +27,12 @@
 #### 2.8 手写HashMap结合(数组+单向链表实现)
 
 
-#### 3. 项目重构或项目设计时常用的设计模式（仅写了一些实际会用到的，不常用的没有写）
-
-##### https://gitlab.com/showkawa/architect/tree/master/designPattern
+#### 3. 项目重构或项目设计时常用的设计模式 https://gitlab.com/showkawa/architect/tree/master/designPattern
+##### 3.1 策略模式 strategy
+##### 3.2 责任链模式 responsibilitychain
+##### 3.3 模板方法模式 template
+##### 3.4 装饰器模式 decorative
+##### 3.5 代理模式 proxy
+##### 3.6 观察者模式 observer
+##### 3.7 单例模式 singleton
+##### 3.8 适配器模式 adapter
