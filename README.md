@@ -43,8 +43,9 @@
 ##### 5.3 rabbitMQ 消息幂等性设计和分布式事务处理 rabbitmq
 ##### 5.4 lcn 分布式事务
 ##### 5.5 sharding-jdbc 分库分表
-##### 5.互联网安全架构 security
-##### 5.1 预防xss跨站脚本攻击 xss
-##### 5.2 防盗链技术 doorchain
-##### 5.3 接口幂等性设计 idempotent
-##### 5.3 springboot security细粒度基于页面的权限控制
+
+#### 6.互联网安全架构  https://gitee.com/showkawa_admin/architect/tree/master/security
+##### 6.1 预防xss跨站脚本攻击 xss
+##### 6.2 防盗链技术 doorchain
+##### 6.3 接口幂等性设计 idempotent
+##### 6.3 springboot security细粒度基于页面的权限控制
