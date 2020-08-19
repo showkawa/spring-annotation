@@ -55,7 +55,6 @@ public class MainTest {
 //        }
 //        System.out.println("----get--WenTao---: " + wentao);
 
-
         //关闭ioc容器
         ((AnnotationConfigApplicationContext) mainConfig).close();
     }
