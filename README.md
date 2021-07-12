@@ -17,9 +17,6 @@
 ##### 2.7 手写LinkList集合
 ##### 2.8 手写HashMap结合(数组+单向链表实现)
 
-
-======================================== https://gitee.com/showkawa_admin/architect =============================================================
-
 #### 3. 项目重构或项目设计时常用的设计模式 https://gitee.com/showkawa_admin/architect/tree/master/designPattern
 ##### 3.1 策略模式 strategy
 ##### 3.2 责任链模式 responsibilitychain
@@ -52,3 +49,6 @@
 ##### 6.2 防盗链技术 doorchain
 ##### 6.3 接口幂等性设计 idempotent
 ##### 6.3 springboot security细粒度基于页面的权限控制
+
+#### 7 lambda 表达式
+##### 7.1 lambda https://gitee.com/showkawa_admin/netty-annotation/tree/master/src/main/java/com/brian/java8/lambda
