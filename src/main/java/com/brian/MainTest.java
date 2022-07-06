@@ -1,22 +1,17 @@
 package com.brian;
 
-import com.brian.aop.MathCalculator;
-import com.brian.bean.*;
 import com.brian.config.MainConfig;
-import com.brian.config.MainConfigOfLifeCycle;
 import com.brian.controller.BookController;
-import com.write.bmvc.annotation.BrianController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.util.Assert;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class MainTest {
     public static void main(String[] args) {
-         ApplicationContext mainConfig =
-                 new AnnotationConfigApplicationContext(MainConfig.class);
+        ApplicationContext mainConfig =
+                new AnnotationConfigApplicationContext(MainConfig.class);
 
         System.out.println("MainConfig容器创建成功");
 
@@ -43,8 +38,8 @@ public class MainTest {
 //        System.out.println("---main---test---person2---: " + person2.toString());
 
 
-       // MathCalculator mathCalculator = (MathCalculator) acac.getBean("mathCalculator");
-       // System.out.println("----get--mathCalculator---: " + mathCalculator);
+        // MathCalculator mathCalculator = (MathCalculator) acac.getBean("mathCalculator");
+        // System.out.println("----get--mathCalculator---: " + mathCalculator);
 
 //        BrianBeanFactory beanFactory = acac.getBean(BrianBeanFactory.class);
 //        WenTao wentao = null;
@@ -54,7 +49,6 @@ public class MainTest {
 //            e.printStackTrace();
 //        }
 //        System.out.println("----get--WenTao---: " + wentao);
-
 
 
         //关闭ioc容器
